@@ -12,7 +12,7 @@ package org.bean;
 				SESSION_FACTORY = new Configuration().configure("org/resources/hibernate.cfg.xml")
 						.buildSessionFactory();
 			}catch(HibernateException th) {
-				System.err.println("Error : "+th);
+				th.printStackTrace();
 			}
 		}
 		

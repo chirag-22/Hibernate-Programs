@@ -20,7 +20,7 @@ public class Registeration extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		String AccNo = "" + new Random().nextInt(350);
+		int AccNo = new Random().nextInt(350);
 		String FirstName = req.getParameter("FirstName");
 		String LastName = req.getParameter("LastName");
 		String Gender = req.getParameter("Gender");
@@ -31,15 +31,15 @@ public class Registeration extends HttpServlet {
 		String DOB = req.getParameter("DOB");
 
 		Customer ct = new Customer();
-		ct.getAccNo();
-		ct.getFirstName();
-		ct.getLastName();
-		ct.getGender();
-		ct.getEmail();
-		ct.getMobile();
-		ct.getPassword();
-		ct.getAddress();
-		ct.getDOB();
+		ct.setAccNo(AccNo);
+		ct.setFirstName(FirstName);
+		ct.setGender(Gender);
+		ct.setEmail(Email);
+        ct.setMobile(Mobile);
+		ct.setPassword(Password);
+		ct.setAddress(Address);
+		ct.setDOB(DOB);
+	
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		try {
@@ -49,7 +49,7 @@ public class Registeration extends HttpServlet {
 			session.getTransaction().commit();
 
 			resp.getWriter().println("<html><body><h1>Registration Done</h1></body></html>");
-			RequestDispatcher rd = req.getRequestDispatcher("login.jsp");
+			RequestDispatcher rd = req.getRequestDispatcher("Login.jsp");
 			rd.include(req, resp);
 		} catch (Exception exp) {
 			System.err.println("Problem : " + exp);
