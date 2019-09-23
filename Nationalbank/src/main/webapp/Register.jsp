@@ -11,13 +11,14 @@ body {margin =0px;
 
 .form {
 	border: solid 1px;
+	border-radius:24px;
 	width: 457px;
 	height: 561px;
 	float: right;
 	right: 525px;
 	top: 86px;
 	position: relative;
-	background-color: none;
+	background-color: #f3f3f3;
 	color: black;
 }
 
@@ -51,11 +52,26 @@ body {margin =0px;
 	background: none;
 }
 
+.mobile input {
+	border: solid 1px;
+	border-radius: 24px;
+	float: right;
+	right: 135px;
+	top: 95px;
+	position: relative;
+	width: 225px;
+	height: 39px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 800;
+	background: none;
+}
+
 .user input {
 	border: solid 1px;
 	border-radius: 24px;
 	float: right;
-	right: 130px;
+	right: -96px;
 	top: 85px;
 	position: relative;
 	width: 225px;
@@ -85,8 +101,8 @@ body {margin =0px;
 	border: solid 1px;
 	border-radius: 24px;
 	float: right;
-	right: 131px;
-	top: 146px;
+	right: -93px;
+	top: 148px;
 	position: relative;
 	width: 225px;
 	height: 39px;
@@ -100,8 +116,8 @@ body {margin =0px;
 	border: solid 1px;
 	border-radius: 24px;
 	float: right;
-	right: -97px;
-	top: 198px;
+	right: -87px;
+	top: 257px;
 	position: relative;
 	width: 225px;
 	height: 39px;
@@ -115,8 +131,8 @@ body {margin =0px;
 	border: solid 1px;
 	border-radius: 24px;
 	float: right;
-	right: -97px;
-	top: 210px;
+	right: 137px;
+	top: 294px;
 	position: relative;
 	width: 225px;
 	height: 39px;
@@ -166,6 +182,21 @@ body {margin =0px;
 	text-decoration: none;
 }
 
+.add input {
+	border: solid 1px;
+	border-radius: 24px;
+	float: right;
+	right: 135px;
+	top: 155px;
+	position: relative;
+	width: 225px;
+	height: 39px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 800;
+	background: none;
+}
+
 .butt input {
 	width: 386px;
 	height: 55px;
@@ -193,7 +224,7 @@ body {margin =0px;
 			<div class="user">
 				<input type="email" name="Email" placeholder="UserName" required></input>
 			</div>
-			<div class="lname">
+			<div class="mobile">
 				<input type="text" name="Mobile" placeholder="Phone Number" required></input>
 			</div>
 			<div class="pass">
@@ -201,7 +232,7 @@ body {margin =0px;
 					required></input>
 			</div>
 
-			<div class="lname">
+			<div class="add">
 				<input type="text" name="Address" placeholder="Address" required></input>
 			</div>
 			<div class="dob">

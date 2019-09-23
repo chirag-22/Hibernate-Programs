@@ -33,6 +33,7 @@ public class Registeration extends HttpServlet {
 		Customer ct = new Customer();
 		ct.setAccNo(AccNo);
 		ct.setFirstName(FirstName);
+		ct.setLastName(LastName);
 		ct.setGender(Gender);
 		ct.setEmail(Email);
         ct.setMobile(Mobile);

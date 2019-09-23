@@ -66,8 +66,8 @@
                   <span>Nati</span><span class="m">O</span><span>nal</span>
               </div>
               <div class="Menu">
-                 <a href="Register.jsp">Register</a>
-                 <a href="Login.jsp">Login|</a>
+                 <a href="Passbook.jsp">PassBook|</a>
+                 <a href="Login.jsp">Logout|</a>
               </div> 
         </div>
          <div class="content">
